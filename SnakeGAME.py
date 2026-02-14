@@ -13,7 +13,7 @@ sleeptime = 0.3
 #with tracer = 0 (animations are off) fastest
 score = ScoreBoard()
 snake = Snake(screen)
-food = Food()
+food = Food(color = "green", shape = "turtle")
 food.refresh()
 
 game_over = False
@@ -38,6 +38,7 @@ while not game_over:
             game_over = True
 
 screen.exitonclick()
+
 
 
 
